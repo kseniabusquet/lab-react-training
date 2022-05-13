@@ -1,14 +1,12 @@
 .ID-card-wrapper {
     display: flex;
     flex-direction: row;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     border: 2px solid black;
     width: 700px;
-    margin: 5px 5px 5px 5px;
-    
+    margin: 5px;
 }
 
 p {
-    margin-top: 0;
-    margin-left: 10px;
+    margin: 0 10px;
 }

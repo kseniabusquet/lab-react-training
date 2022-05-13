@@ -1,8 +1,7 @@
-import {format} from "date-fns";
+//import {format} from "date-fns";
 
 function IdCard(props) {
-    console.log(props);
-   
+  
     return (
       <div className = "ID-card-wrapper">
           <img src = {props.picture} alt = "profile"/>
