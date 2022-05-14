@@ -1,14 +1,25 @@
 function Random(props) {
 
-    const min = props.min - 1;
-    //algorithm not 100% correct
-    const randomNum = Math.floor((Math.random() * (props.max - min)) + min);
+    const min = props.min
+    const max = props.max
+    const randomNum = generateRandom(min, max)
+    console.log(randomNum)
+    console.log(typeof(randomNum))
 
     return (
         <div className = "ID-card-wrapper">
-         <p>Random value between {props.min} and {props.max} is {randomNum}</p>
+          <p>Random value between {min} and {max} is {randomNum}</p>
         </div>
     )
+  }
+
+  function generateRandom(min, max) {
+
+    let difference = max - min;
+    let rand = Math.random();
+    rand = Math.floor( rand * difference);
+    rand = rand + min;
+    return rand;
 }
   
 export default Random;
