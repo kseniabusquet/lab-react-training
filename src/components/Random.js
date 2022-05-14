@@ -8,7 +8,7 @@ function Random(props) {
 
     return (
         <div className = "ID-card-wrapper">
-          <p>Random value between {min} and {max} is {randomNum}</p>
+          <p>Random value between {min + 1} and {max} is {randomNum}</p>
         </div>
     )
   }
