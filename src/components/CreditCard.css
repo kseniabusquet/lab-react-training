@@ -1,0 +1,25 @@
+.Bank-Name {
+    margin-left: 20px;
+}
+
+.Card-Type{
+    text-align: right;
+}
+
+.Card-Wrapper {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.Card-Wrapper .Number {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.Card-Wrapper .Card-Type > img {
+    height: 20px;
+}

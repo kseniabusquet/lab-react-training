@@ -40,3 +40,10 @@
     transform: rotate(360deg);
   }
 }
+
+.Credit-Cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

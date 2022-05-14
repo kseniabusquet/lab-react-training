@@ -1,10 +1,14 @@
 function BoxColor(props) {
 
+        let textColor = ""
         const hex = RGBToHex(props.r, props.g, props.b)
+        if (hex === "#ff0000") textColor = "#ffffff"
+        else textColor = "#000000"
+
 
     return (
         <div className = "ID-card-wrapper" style={{
-            backgroundColor: hex, justifyContent:"center"
+            backgroundColor: hex, justifyContent:"center", color: textColor
           }}>
             <p style={{textAlign:"center"}} >
                 rgb({props.r}, {props.g}, {props.b}) <br />{hex}</p>

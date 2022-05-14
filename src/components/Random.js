@@ -1,6 +1,7 @@
 function Random(props) {
 
     const min = props.min - 1;
+    //algorithm not 100% correct
     const randomNum = Math.floor((Math.random() * (props.max - min)) + min);
 
     return (
