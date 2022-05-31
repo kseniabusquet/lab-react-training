@@ -27,7 +27,7 @@ function Dice(){
 
     return (
         <div className='dice-picture'>
-            <img src={dice} onClick={toggleDice}/>
+            <img src={dice} alt='dice' onClick={toggleDice}/>
         </div>
     )
 }
