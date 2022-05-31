@@ -3,13 +3,19 @@ import './components/IdCard.css';
 import './components/CreditCard.css';
 import './components/Rating.css';
 import './components/DriverCard.css';
+import './components/LikeButton.css'
+import './components/ClickablePicture.css'
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
-import DriverCard from './components/DirverCard';
+import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import maxence from './assets/images/maxence.png';
+import maxenceGlasses from './assets/images/maxence-glasses.png';
 
 function App() {
   return (
@@ -109,6 +115,15 @@ function App() {
         licensePlate: "BE33ER"
       }}
     />
+    <h1>Like Button</h1>
+    <LikeButton />
+
+    <h1>Clickable Picture</h1>
+    <ClickablePicture
+      img = {maxence}
+      imgClicked={maxenceGlasses}
+    />
+
           </div>
   );
 }

@@ -1,13 +1,11 @@
 import Rating from "./Rating";
 
 function DriverCard(props) {
-
-    console.log(props.rating)
     
     return (
         <div className = "Driver">
             <div className = "Center">
-            <div class = "DriverPic">
+            <div className = "DriverPic">
               <img src = {props.img} alt = "driver"/>
             </div>
            
