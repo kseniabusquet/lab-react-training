@@ -1,9 +1,6 @@
-.clickable-picture{
-    margin: 10px;
-}
-
 .clickable-picture-container{
-    width: 300px;
-    height: 300px;
+    width: 460px;
+    height: 460px;
+    margin: 10px;
 }
 

@@ -1,10 +1,11 @@
-import './App.css';
-import './components/IdCard.css';
-import './components/CreditCard.css';
-import './components/Rating.css';
-import './components/DriverCard.css';
+import './App.css'
+import './components/IdCard.css'
+import './components/CreditCard.css'
+import './components/Rating.css'
+import './components/DriverCard.css'
 import './components/LikeButton.css'
 import './components/ClickablePicture.css'
+import './components/Dice.css'
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -16,6 +17,8 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import maxence from './assets/images/maxence.png';
 import maxenceGlasses from './assets/images/maxence-glasses.png';
+import Dice from './components/Dice'
+
 
 function App() {
   return (
@@ -123,6 +126,9 @@ function App() {
       img = {maxence}
       imgClicked={maxenceGlasses}
     />
+
+    <h1>Dice</h1>
+      <Dice />
 
           </div>
   );

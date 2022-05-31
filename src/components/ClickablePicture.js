@@ -10,8 +10,7 @@ function ClickablePicture(props){
 
     return (
         <div className='clickable-picture-container'>
-            
-            <img className='clickable-picture' src={picture} alt ='clickable' onClick={() => togglePicture()}/>
+            <img src={picture} alt ='clickable' onClick={() => togglePicture()}/>
         </div>
     )
 }
