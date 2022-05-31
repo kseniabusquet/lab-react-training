@@ -1,0 +1,17 @@
+.facebook-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}

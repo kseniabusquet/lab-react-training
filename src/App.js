@@ -8,6 +8,7 @@ import './components/ClickablePicture.css'
 import './components/Dice.css'
 import './components/Carousel.css'
 import './components/NumbersTable.css'
+import './components/FaceBook.css'
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -22,6 +23,7 @@ import maxenceGlasses from './assets/images/maxence-glasses.png';
 import Dice from './components/Dice'
 import Carousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
+import FaceBook from './components/FaceBook'
 
 
 function App() {
@@ -144,6 +146,10 @@ function App() {
 
     <h1>List and keys: Numbers Table</h1>
       <NumbersTable limit={12}/>
+    
+    <h1>List and keys: FaceBook</h1>
+    <FaceBook />
+
           </div>
   );
 }
