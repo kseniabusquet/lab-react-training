@@ -9,6 +9,7 @@ import './components/Dice.css'
 import './components/Carousel.css'
 import './components/NumbersTable.css'
 import './components/FaceBook.css'
+import './components/SignupPage.css'
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
 import Random from './components/Random';
@@ -24,6 +25,7 @@ import Dice from './components/Dice'
 import Carousel from './components/Carousel'
 import NumbersTable from './components/NumbersTable'
 import FaceBook from './components/FaceBook'
+import SignupPage from './components/SignupPage'
 
 
 function App() {
@@ -150,6 +152,8 @@ function App() {
     <h1>List and keys: FaceBook</h1>
     <FaceBook />
 
+    <h1>Form: Signup Page </h1>
+    <SignupPage />
           </div>
   );
 }
