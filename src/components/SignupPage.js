@@ -32,11 +32,11 @@ function SignupPage(){
 
 
     return (
-        <div className="inputs">
+        <div className="inputs sketchy">
             <p>Email Address</p>
             <input type="email" value = {email} placeholder="Type your email address..." onChange={handleEmailInput}></input>
             {isValid && <p className='valid'>You typed a valid email ✅ </p>}
-            {!isValid && <p className='invalid'>Please check your email address ❌ </p>}
+            {!isValid && <p className='invalid'>Please enter a valid email address ❌ </p>}
             <p>Password</p>
             <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" value = {password} placeholder="Type your password..." onChange={handlePasswordInput}></input>
             {isStrong && <p className='valid'>Your password is strong ✅ </p>}
@@ -58,7 +58,8 @@ function SignupPage(){
             {nationality === 'de' && <p>Hallo 😀 </p>}
             {nationality === 'fr' && <p>Bonjour 😀 </p>}
 
-            <p>Your email address is <b>{email}</b></p>
+            <p>Your email address is:</p>
+                <p><b>{email}</b></p>
             {isValid && <p className='valid'>Your email address is correct</p>}
         </div>
     )
