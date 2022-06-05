@@ -20,3 +20,7 @@ p {
     margin: 5px;
     width: 150px;
 }
+
+.selected {
+    background-color: aqua;
+}

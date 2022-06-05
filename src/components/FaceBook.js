@@ -1,6 +1,9 @@
+import {useState} from 'react'
 import profiles from '../data/berlin.json';
 
 function FaceBook (){
+
+    const [selectedCountry, setSelectedCountry] = useState('')
 
     const countries = []
     profiles.forEach(profile => countries.push(profile.country));
@@ -11,9 +14,8 @@ function FaceBook (){
     return (
         <div>
             <div className="buttons">
-                <button className='country-button'>All</button>
                 {uniqueCountries.map((country,index) =>{
-                    return <button className='country-button' key = {index}>{country}</button>
+                    return <button onClick = {() => setSelectedCountry(country)} className='country-button button-4' key = {index}>{country}</button>
                 })}
                 
             </div>
@@ -21,7 +23,7 @@ function FaceBook (){
             <div>
                 {profiles.map((profile, index) => {
                 return (
-                    <div className = "facebook-wrapper" key={index}>
+                    <div className = {selectedCountry === profile.country ? 'selected facebook-wrapper' : 'facebook-wrapper'} key={index}>
                         <img className='facebook-picture'src = {profile.img} alt = 'profile'/>
                         <div>
                         <p><b>First name:</b> {profile.firstName}</p>

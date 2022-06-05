@@ -3,8 +3,6 @@ function Random(props) {
     const min = props.min
     const max = props.max
     const randomNum = generateRandom(min, max)
-    console.log(randomNum)
-    console.log(typeof(randomNum))
 
     return (
         <div className = "ID-card-wrapper">
